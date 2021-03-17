@@ -57,13 +57,13 @@ function showLetter() {
  */
 
   var count1 = 0;
-  var muspek = "1.png";
-  var musenover = "2.png";
+  var muspek = "assets/images/1.png";
+  var musenover = "assets/images/2.png";
 
-  var knack = "knack.mp3";
-  var knack1 = "knack1.mp3";
-  var knack2 = "knack2.mp3";
-  var knack3 = "knack3.mp3";
+  var knack = "assets/sound/knack.mp3";
+  var knack1 = "assets/sound/knack1.mp3";
+  var knack2 = "assets/sound/knack2.mp3";
+  var knack3 = "assets/sound/knack3.mp3";
 
 
 
@@ -93,38 +93,38 @@ function showLetter() {
 
     }
     if (count >= 5000 && count < 9999) {                  // HÄR KOMMER STORA CHECKPOINTSEN!!!
-      $("#space").css("background-image", "url('door1.png')");
+      $("#space").css("background-image", "url('assets/images/door1.png')");
     }
     else if (count >= 10000 && count < 29999) {
-      $("#space").css("background-image", "url('door2.png')");
+      $("#space").css("background-image", "url('assets/images/door2.png')");
     }
     else if (count >= 30000 && count < 49999) {
-      $("#space").css("background-image", "url('door3.png')");
+      $("#space").css("background-image", "url('assets/images/door3.png')");
     }
     else if (count >= 50000 && count < 999999) {
-      $("#space").css("background-image", "url('door4.png')");
+      $("#space").css("background-image", "url('assets/images/door4.png')");
     }
     else if (count >= 100000 && count < 199999) {
-      $("#space").css("background-image", "url('door5.png')");
+      $("#space").css("background-image", "url('assets/images/door5.png')");
     }
     else if (count >= 200000 && count < 499999) {
-      $("#space").css("background-image", "url('door6.png')");
+      $("#space").css("background-image", "url('assets/images/door6.png')");
     }
     else if (count >= 500000 && count < 599999) {
-      $("#space").css("background-image", "url('door7.png')");
+      $("#space").css("background-image", "url('assets/images/door7.png')");
     }
     else if (count >= 600000 && count < 699999) {
-      $("#space").css("background-image", "url('door8.png')");
+      $("#space").css("background-image", "url('assets/images/door8.png')");
     }
     else if (count >= 700000 && count < 799999) {
-      $("#space").css("background-image", "url('door9.png')");
+      $("#space").css("background-image", "url('assets/images/door9.png')");
     }
     else if (count >= 800000 && count < 999999) {
-      $("#space").css("background-image", "url('door10.png')");
+      $("#space").css("background-image", "url('assets/images/door10.png')");
     }
     else if (count >= 1000000) {
-      $("#space").css("background-image", "url('door11.png')");
-      var sndfinal = new Audio("finale.mp3");
+      $("#space").css("background-image", "url('assets/images/door11.png')");
+      var sndfinal = new Audio("assets/sound/finale.mp3");
       sndsaber.play();
     }
 
@@ -143,7 +143,7 @@ function showLetter() {
     }
     else if (count1 == 14) {
       document.getElementById("texten").innerHTML = "This is Carl and Sophia...";
-      document.getElementById("annat").innerHTML = "<img src='carlsophia.JPG' style='height:40vh'></img>";
+      document.getElementById("annat").innerHTML = "<img src='assets/images/carlsophia.JPG' style='height:40vh'></img>";
     }
     else if (count1 == 22) {
       document.getElementById("texten").innerHTML = "We study in a school called <span style='color:#22ccae'>Hyper</span> <span style='color:#e9226e'>Island</span> (google it!)...";
@@ -158,7 +158,7 @@ function showLetter() {
 
     }
     else if (count1 == 47) {
-      document.getElementById("texten").innerHTML = "...we have a mission in mind...<img style='height:4vh;' src='1f60f.png'>";
+      document.getElementById("texten").innerHTML = "...we have a mission in mind...<img style='height:4vh;' src='assets/images/1f60f.png'>";
 
     }
 
@@ -174,17 +174,17 @@ function showLetter() {
     else if (count1 == 73) {
 
 
-    document.getElementById("annat").innerHTML = "<img src='plex1.png' style='height:40vh'></img>";
+    document.getElementById("annat").innerHTML = "<img src='assets/images/plex1.png' style='height:40vh'></img>";
       }
     else if (count1 == 83) {
 
-    document.getElementById("annat").innerHTML = "<img src='plex2.png' style='height:40vh'></img>";
+    document.getElementById("annat").innerHTML = "<img src='assets/images/plex2.png' style='height:40vh'></img>";
         }
 
     else if (count1 == 93) {
 
 
-    document.getElementById("annat").innerHTML = "<img src='plex3.png' style='height:40vh'></img>";
+    document.getElementById("annat").innerHTML = "<img src='assets/images/plex3.png' style='height:40vh'></img>";
           }
     else if (count1 == 103) {
       document.getElementById("texten").innerHTML = "...all inclusive! <img style='height:4vh;' src='http://emojione.com/wp-content/uploads/assets/emojis/1f46f.svg'>";
@@ -253,7 +253,7 @@ document.getElementById("annat").innerHTML = "<img style='display:none'></img>";
 }
 else if (count1 == 193) {
 
-document.getElementById("annat").innerHTML = "<img src='stinkyfish.png' style='height:40vh'></img>";
+document.getElementById("annat").innerHTML = "<img src='assets/images/stinkyfish.png' style='height:40vh'></img>";
 
 }
 else if (count1 == 203) {
@@ -284,16 +284,16 @@ document.getElementById("texten").innerHTML = "You already knocked over 200 time
 
     else if (count1 == 320) {     //LIGHTSABER!!!!!
 
-        muspek = "saber2.png";
-        musenover = "saber1.png";
-        knack = "lightsaberhit1.mp3";
-        knack1 = "lightsaberhit2.mp3";
-        knack2 = "lightsaberhit3.mp3";
-        knack3 = "lightsaberhit3.mp3";
-        var sndsaber = new Audio("lightsaberstep2.mp3");
+        muspek = "assets/sound/saber2.png";
+        musenover = "assets/sound/saber1.png";
+        knack = "assets/sound/lightsaberhit1.mp3";
+        knack1 = "assets/sound/lightsaberhit2.mp3";
+        knack2 = "assets/sound/lightsaberhit3.mp3";
+        knack3 = "assets/sound/lightsaberhit3.mp3";
+        var sndsaber = new Audio("assets/sound/lightsaberstep2.mp3");
         sndsaber.play();
 
-        var sndsaberon = new Audio("lightsaberon.mp3");
+        var sndsaberon = new Audio("assets/sound/lightsaberon.mp3");
         sndsaberon.play();
 
 
@@ -302,20 +302,20 @@ document.getElementById("texten").innerHTML = "You already knocked over 200 time
 
     else if (count1 == 214) {     //DYLAN
 
-        var sndknocking = new Audio("bobdylan.mp3");
+        var sndknocking = new Audio("assets/sound/bobdylan.mp3");
         sndknocking.play();
 }
 
     else if (count1 == 365) {
                                       // LIGHTSABER OFF
-        muspek = "1.png";
-        musenover = "2.png";
-        knack = "knack.mp3";
-        knack1 = "knack1.mp3";
-        knack2 = "knack2.mp3";
-        knack3 = "knack3.mp3";
+        muspek = "assets/images/1.png";
+        musenover = "assets/images/2.png";
+        knack = "assets/sound/knack.mp3";
+        knack1 = "assets/sound/knack1.mp3";
+        knack2 = "assets/sound/knack2.mp3";
+        knack3 = "assets/sound/knack3.mp3";
 
-        var sndsaberoff = new Audio("lightsaberoff.mp3");
+        var sndsaberoff = new Audio("assets/sound/lightsaberoff.mp3");
         sndsaberoff.play();
 
 
@@ -324,43 +324,43 @@ document.getElementById("texten").innerHTML = "You already knocked over 200 time
 
 
     else if (count1 == 47) {
-      $("#img").attr("src", "2trump.png"); // trump kommer in
-      var sndsmash = new Audio("smash.mp3");
+      $("#img").attr("src", "assets/images/2trump.png"); // trump kommer in
+      var sndsmash = new Audio("assets/sound/smash.mp3");
       sndsmash.play();
     }
     else if (count1 == 48) {
 
-      $("#img").attr("src", "2trump.png"); // trump kommer in
-      var sndsmash = new Audio("smash.mp3");
+      $("#img").attr("src", "assets/images/2trump.png"); // trump kommer in
+      var sndsmash = new Audio("assets/sound/smash.mp3");
       sndsmash.play();
     }
     else if (count1 == 49) {
 
-      $("#img").attr("src", "2trump.png"); // trump kommer in
-      var sndsmash = new Audio("smash.mp3");
+      $("#img").attr("src", "assets/images/2trump.png"); // trump kommer in
+      var sndsmash = new Audio("assets/sound/smash.mp3");
       sndsmash.play();
     }
     else if (count1 == 50) {
 
-      $("#img").attr("src", "2trump.png"); // trump kommer in
-      var sndsmash = new Audio("smash.mp3");
+      $("#img").attr("src", "assets/images/2trump.png"); // trump kommer in
+      var sndsmash = new Audio("assets/sound/smash.mp3");
       sndsmash.play();
     }
     else if (count1 == 51) {
 
-      $("#img").attr("src", "2trump.png"); // trump kommer in
-      var sndsmash = new Audio("smash.mp3");
+      $("#img").attr("src", "assets/images/2trump.png"); // trump kommer in
+      var sndsmash = new Audio("assets/sound/smash.mp3");
       sndsmash.play();
     }
     else if (count1 == 52) {
 
-      $("#img").attr("src", "2trump.png"); // trump kommer in
-      var sndsmash = new Audio("smash.mp3");
+      $("#img").attr("src", "assets/images/2trump.png"); // trump kommer in
+      var sndsmash = new Audio("assets/sound/smash.mp3");
       sndsmash.play();
     }
 
     else if (count1 == 380) {
-      var sndcreek = new Audio("closedoor.mp3");
+      var sndcreek = new Audio("assets/sound/closedoor.mp3");
       sndcreek.play();
 
     }
@@ -368,7 +368,7 @@ document.getElementById("texten").innerHTML = "You already knocked over 200 time
     else if (count1 == 300) {
       document.getElementById("texten").innerHTML = "<span style='color:red'>You just knocked 300 times!</span>";
 
-      var sndlevelup = new Audio("supermariolevelup.mp3");
+      var sndlevelup = new Audio("assets/sound/supermariolevelup.mp3");
       sndlevelup.play();
 
     }
@@ -396,19 +396,19 @@ document.getElementById("texten").innerHTML = "You already knocked over 200 time
       document.getElementById("texten").innerHTML = "<span style='color:red'>You just knocked 650 times!! The force is strong in you...</span>";
       document.getElementById("annat").innerHTML = "<img src='http://i.giphy.com/l46Co02tWrtd0Oq4g.gif' style='height:40vh'></img>";
 
-      var sndlevelup = new Audio("supermariolevelup.mp3");
+      var sndlevelup = new Audio("assets/sound/supermariolevelup.mp3");
       sndlevelup.play();
     }
 
 
     else if (count1 == 340) {
                         // KATTEN!!!!
-        $("#space").css("background-image", "url('dooropen.png')");
-        var sndno = new Audio("no.mp3");
+        $("#space").css("background-image", "url('assets/images/dooropen.png')");
+        var sndno = new Audio("assets/sound/no.mp3");
         sndno.play();
 
             setTimeout(function(){
-              $("#space").css("background-image", "url('doori1.png')");
+              $("#space").css("background-image", "url('assets/images/doori1.png')");
             }, 1300);
 
 
